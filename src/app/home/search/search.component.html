@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="row">
+    <h4>Select filter</h4>
+  </div>
+  <div class="col-md-3">
+    <select [(ngModel)]="filter">
+      <option *ngFor="let a of ['id','name','salary','dep']" [value]="a">{{a}} </option>
+    </select>
+  </div>
+  <div class="col-md-3">
+    <input class="form-control col-md-4" type="text" placeholder="Enter Value" [(ngModel)]="searchText">
+  </div>
+  <div>
+    <button (click)="search()" class="btn btn-primary">Search</button>
+  </div>
+</div>

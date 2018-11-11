@@ -1,0 +1,16 @@
+<table class="table table-responsive">
+    <tr>
+      <th> Id </th>
+      <th> Name </th>
+      <th> Salary </th>
+      <th> Dept </th>
+    </tr>
+
+  <tr *ngFor="let ta of tableArray | filterTable: value: col  ; let i = index" >
+    <td> {{ta.id}} </td>
+    <td> {{ta.name}} </td>
+    <td> {{ta.salary}} </td>
+    <td> {{ta.dep}} </td>
+  </tr>
+  </table>
+  
